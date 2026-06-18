@@ -1,0 +1,7 @@
+class Solution:
+    def repeatedCharacter(self, s: str) -> str:
+        hashmap={}
+        for c in s:
+            if c in hashmap:
+                return c
+            hashmap[c]=1
